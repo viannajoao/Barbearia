@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+:root{
+  --first-color: rgb(255, 176, 29);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  height: 500vh;
+}
+
+a{
+  padding: 0px 20px;
+  font-size: 20px;
+}
+
+.container{
+  width: 100%;
+  position: relative;
+}
+
+nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  line-height: 90px;
+  color: #fff;
+  width: 100%;
+  transition: .3s;
+}
+
+.nav-logo{
+  /* background-color: red; */
+  
+}
+
+.nav-logo img{
+  width: 200px;
+  
+}
+
+.nav-menu, .nav-menu-list{
+  display: flex;
+}
+
+.nav-menu, .nav-list{
+  list-style: none;
+  position: relative;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: var(--text-color-second);
+  font-weight: 500;
+  padding-inline: 15px;
+  margin-inline: 20px;
+}
+
+.active-link{
+  position: relative;
+  color: var(--first-color);
+  transition: .3;
+}
+
+.nav-menu-btn{
+  display: none;
+}
+
+
+.wrapper{
+  width: 100%;
+}
+
+.banner{
+  width: 100%;
+  height: 70vh;
+  background-image: url(/images/jovem-na-barbearia-aparando-cabelo.jpg);
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+  align-items: center;
+  
+}
+
+.text-info{
+  /* background-color: red; */
+  margin-left: 10rem;
+  text-align: center;
+  padding: 20px 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-info h1{
+  color: #FFF;
+  font-size: 28px;
+  line-height: 5px;
+  margin-left: 30px;
+  /* margin-left: 5rem; */
+}
+
+.text-info span{
+  color: var(--first-color);
+  font-size: 72px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.banner button{
+  padding: 10px 30px;
+  background-color: var(--first-color);
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.description{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  color: #FFF;
+}
+
+.container-about{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+.about-description{
+  width: 50%;
+  padding: 50px 50px;
+  
+}
+
+.about-description h3{
+  font-size: 40px;
+  color: var(--first-color);
+  margin-bottom: 30px;
+}
+
+.about-img{
+  width: 50%;
+  background-image: url(/images/cadeiras-vintage-na-barbearia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
