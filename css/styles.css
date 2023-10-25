@@ -44,8 +44,8 @@ nav{
 }
 
 .nav-logo img{
-  width: 350px;
-  
+  width: 250px;
+  margin-top: 8px;
 }
 
 .nav-menu, .nav-menu-list{
