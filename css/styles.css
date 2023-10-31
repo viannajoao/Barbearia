@@ -25,12 +25,14 @@ a{
 .container{
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 nav{
   position: fixed;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 90px;
   line-height: 90px;
   color: #fff;
@@ -40,12 +42,15 @@ nav{
 
 .nav-logo{
   /* background-color: red; */
+  width: 250px;
+  height: 80px;
   
 }
 
 .nav-logo img{
-  width: 250px;
+  width: 220px;
   margin-top: 8px;
+  position: relative;
 }
 
 .nav-menu, .nav-menu-list{
@@ -90,6 +95,10 @@ nav{
   display: flex;
   align-items: center;
   
+}
+
+.text-info{
+  visibility: hidden;
 }
 
 .text-info{
@@ -169,7 +178,7 @@ nav{
 }
 
 .container-cards{
-  background-image: url(/images/fundo-feito-de-tijolos.jpg);
+  background-image: url(/images/fundo-de-parede-de-tijolo-marrom-vermelho.jpg);
   background-size: cover;
   background-position: center;
   

@@ -19,25 +19,3 @@ function headerColor() {
   }
 }
 
-let srTop = ScrollReveal({delay: 200});
-
-srTop.reveal('.sticky-beard', {
-  origin: 'right',
-  distance: '80px',
-  duration: 1500,
-  reset: true
-})
-
-srTop.reveal('.nav-menu', {
-  origin: 'top',
-  duration: 1500,
-  distance: '50px',
-  reset: true
-})
-
-srTop.reveal('.text-info', {
-  origin: 'top',
-  duration: 1500,
-  distance: '50px',
-  reset: true
-})
