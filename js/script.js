@@ -30,7 +30,6 @@ function headerColor() {
   }
 }
 
-<<<<<<< HEAD
 
 let srleft = ScrollReveal({
   origin: 'left',
@@ -42,5 +41,3 @@ let srleft = ScrollReveal({
 
 
 srleft.reveal('.card', {delay: 250})
-=======
->>>>>>> 6f27a4b5f8bb432f5a6baa96930543530833a30a

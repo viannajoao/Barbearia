@@ -58,21 +58,11 @@ nav {
 
 .nav-logo {
   /* background-color: red; */
-<<<<<<< HEAD
   position: relative;
 }
 
 .nav-logo img {
   width: 250px;
-=======
-  width: 250px;
-  height: 80px;
-  
-}
-
-.nav-logo img{
-  width: 220px;
->>>>>>> 6f27a4b5f8bb432f5a6baa96930543530833a30a
   margin-top: 8px;
   position: relative;
 }
@@ -124,15 +114,7 @@ nav {
 
 }
 
-<<<<<<< HEAD
 .text-info {
-=======
-.text-info{
-  visibility: hidden;
-}
-
-.text-info{
->>>>>>> 6f27a4b5f8bb432f5a6baa96930543530833a30a
   /* background-color: red; */
   margin-left: 120px;
   text-align: center;
@@ -211,15 +193,9 @@ nav {
   background-color: #FFF;
 }
 
-<<<<<<< HEAD
 .container-cards {
   background-image: url(/images/fundo-feito-de-tijolos.jpg);
   background-size: contain;
-=======
-.container-cards{
-  background-image: url(/images/fundo-de-parede-de-tijolo-marrom-vermelho.jpg);
-  background-size: cover;
->>>>>>> 6f27a4b5f8bb432f5a6baa96930543530833a30a
   background-position: center;
 
 
