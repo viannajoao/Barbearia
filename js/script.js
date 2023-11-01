@@ -1,3 +1,14 @@
+function myMenuFunction(){
+  let menuBtn = document.getElementById("myNavMenu");
+
+  console.log(menuBtn)
+  if(menuBtn.className === "nav-menu"){
+    menuBtn.className += " responsive";
+  } else {
+    menuBtn.className = "nav-menu";
+  }
+}
+
 window.onscroll = function (){headerColor()}
 
 function headerColor() {
@@ -13,31 +24,20 @@ function headerColor() {
   }else{
 
     navHeader.style.backgroundColor = 'transparent';
-    navHeader.style.height = '110px';
-    navHeader.style.lineHeight = '110px';
+    navHeader.style.height = '105px';
+    navHeader.style.lineHeight = '105px';
 
   }
 }
 
-let srTop = ScrollReveal({delay: 200});
 
-srTop.reveal('.sticky-beard', {
-  origin: 'right',
-  distance: '80px',
-  duration: 1500,
-  reset: true
+let srleft = ScrollReveal({
+  origin: 'left',
+  distance: '20px',
+  duration: 2000,
+  reset: true,
+  
 })
 
-srTop.reveal('.nav-menu', {
-  origin: 'top',
-  duration: 1500,
-  distance: '50px',
-  reset: true
-})
 
-srTop.reveal('.text-info', {
-  origin: 'top',
-  duration: 1500,
-  distance: '50px',
-  reset: true
-})
+srleft.reveal('.card', {delay: 250})

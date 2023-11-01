@@ -1,33 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 
-:root{
-  --first-color: rgb(255, 176, 29);
+:root {
+  --first-color: #F29F05;
+  --secund-color: #D96704;
 }
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
-html{
+html {
   height: 500vh;
 }
 
-a{
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--first-color);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--secund-color);
+}
+
+a {
   padding: 0px 20px;
   font-size: 20px;
 }
 
-.container{
+.container {
   width: 100%;
   position: relative;
 }
 
-nav{
+nav {
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -38,26 +54,28 @@ nav{
   transition: .3s;
 }
 
-.nav-logo{
+.nav-logo {
   /* background-color: red; */
-  
+  position: relative;
 }
 
-.nav-logo img{
+.nav-logo img {
   width: 250px;
   margin-top: 8px;
 }
 
-.nav-menu, .nav-menu-list{
+.nav-menu,
+.nav-menu-list {
   display: flex;
 }
 
-.nav-menu, .nav-list{
+.nav-menu,
+.nav-list {
   list-style: none;
   position: relative;
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: var(--text-color-second);
   font-weight: 500;
@@ -65,22 +83,23 @@ nav{
   margin-inline: 20px;
 }
 
-.active-link{
+.active-link {
   position: relative;
-  color: var(--first-color);
+  color: var(--secund-color);
   transition: .3;
+  font-weight: 700;
 }
 
-.nav-menu-btn{
+.nav-menu-btn {
   display: none;
 }
 
 
-.wrapper{
-  width: 100%;
+.wrapper {
+  width: 100% !important;
 }
 
-.banner{
+.banner {
   width: 100%;
   height: 70vh;
   background-image: url(/images/jovem-na-barbearia-aparando-cabelo.jpg);
@@ -89,12 +108,12 @@ nav{
 
   display: flex;
   align-items: center;
-  
+
 }
 
-.text-info{
+.text-info {
   /* background-color: red; */
-  margin-left: 10rem;
+  margin-left: 120px;
   text-align: center;
   padding: 20px 30px;
 
@@ -103,7 +122,7 @@ nav{
   flex-direction: column;
 }
 
-.text-info h1{
+.text-info h1 {
   color: #FFF;
   font-size: 28px;
   line-height: 5px;
@@ -111,13 +130,13 @@ nav{
   /* margin-left: 5rem; */
 }
 
-.text-info span{
+.text-info span {
   color: var(--first-color);
   font-size: 72px;
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.banner button{
+.banner button {
   padding: 10px 30px;
   background-color: var(--first-color);
   color: #FFF;
@@ -126,7 +145,7 @@ nav{
   display: inline-block;
 }
 
-.description{
+.description {
   width: 100%;
   padding: 20px;
   display: flex;
@@ -136,65 +155,176 @@ nav{
   color: #FFF;
 }
 
-.sticky-beard{
+.sticky-beard {
   width: 40px;
   margin-left: 10px;
 }
 
-.container-about{
+.container-about {
   width: 100%;
   height: 50vh;
   display: flex;
+  /* background-color: #F29F05; */
 }
 
-.about-description{
+.about-description {
   width: 50%;
+  /* height: 100%; */
   padding: 80px 80px;
-  
+  /* background-color: red; */
 }
 
-.about-description h3{
+.about-description h3 {
   font-size: 40px;
   color: var(--first-color);
   margin-bottom: 30px;
 }
 
-.about-img{
+.about-img {
   width: 50%;
   background-image: url(/images/cadeiras-vintage-na-barbearia.jpg);
+  background-color: green;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFF;
 }
 
-.container-cards{
+.container-cards {
   background-image: url(/images/fundo-feito-de-tijolos.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  
+
 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  /* height: 80vh; */
   margin: auto;
+  padding: 20px;
 }
 
-.cards{
+.cards {
   width: 80%;
-  
+
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+  /* display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 20px; */
 }
 
-.card{
+.card {
   background-color: white;
-  width: 450px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
+  visibility: hidden;
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 722px) {
+  .container-about {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/cadeiras-vintage-na-barbearia.jpg);
+    background-size: cover;
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 1156px) {
+  /* .nav-menu{
+    display: none;
+  } */
+
+  .nav-menu-btn {
+    display: flex;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 85px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #64627388;
+    /* background: rgba(255, 255, 255, 0.7); */
+    backdrop-filter: blur(20px);
+    width: 100%;
+    min-height: 450px;
+    height: 95vh;
+    transition: .3s;
+  }
+
+  .nav-menu-list{
+    flex-direction: column;
+  }
+
+  .nav-menu.responsive {
+    left: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .text-info h1 {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 5px;
+    margin-left: 30px;
+    transition: .3s;
+    /* margin-left: 5rem; */
+  }
+
+  .text-info span {
+    color: var(--first-color);
+    font-size: 52px;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: .3s;
+
+  }
+
+  .banner button {
+    padding: 8px 20px;
+    background-color: var(--first-color);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .3s;
+
+  }
+}
+
+@media screen and (max-width:824px) {
+  .cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
