@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/images/barbearia.png" type="image/x-icon">
   <title>Mr.Barber</title>
 </head>
+
 <body>
 
   <div class="container">
@@ -13,31 +16,31 @@
     <!------------------------------ NAVBAR --------------------------->
 
     <nav id="header">
-        <div class="nav-logo">
-          <a><img src="/images/CROSS-removebg-preview-copia.png"></a>
-        </div>
-          <div class="nav-menu" id="myNavMenu">
-              <ul class="nav-menu-list">
-                  <li class="nav-list">
-                    <a href="#" class="nav-link active-link">Home</a>
-                  </li >
-                  <li class="nav-list">
-                    <a href="#" class="nav-link">Quem somos</a>
-                  </li>
-                  <li class="nav-list">
-                    <a href="#" class="nav-link">Nossos Serviços</a>
-                  </li>
-                  <li class="nav-list">
-                    <a href="#" class="nav-link">Blog</a>
-                  </li>
-                  <li class="nav-list">
-                    <a href="#" class="nav-link">Contato</a>
-                  </li>
-              </ul>
-          </div>
-        <div class="nav-menu-btn">
-          <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
-        </div>
+      <div class="nav-logo">
+        <a><img src="/images/CROSS-removebg-preview-copia.png"></a>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav-menu-list">
+          <li class="nav-list">
+            <a href="#" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="#sobre" class="nav-link">Quem somos</a>
+          </li>
+          <li class="nav-list">
+            <a href="#servicos" class="nav-link">Nossos Serviços</a>
+          </li>
+          <li class="nav-list">
+            <a href="#blog" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-list">
+            <a href="#contact" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+      </div>
 
 
     </nav>
@@ -48,11 +51,11 @@
 
       <section class="banner">
         <div class="text-info">
-        <h1>Muito mais do que uma</h1>
-        <span>Barbearia</span>
-        <button>Agende seu Horario</button>
+          <h1>Muito mais do que uma</h1>
+          <span>Barbearia</span>
+          <button>AGENDE SEU HORARIO <i class="fa-solid fa-arrow-right" style="color: #fcfcfc;"></i></button>
         </div>
-        
+
       </section>
       <div class="description">
         <h2>ESCOLHA O SEU ESTILO QUE A GENTE CAPRICHA! </h2><img src="/images/corte-de-barba.png" class="sticky-beard">
@@ -61,29 +64,198 @@
 
       <!----------------------------- SOBRE NOS ------------------------------------->
 
-      <section class="container-about">
+      <section class="container-about" id="sobre">
         <div class="about-description">
-          <h3>Sobre nos</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, ab tempora nostrum odit tempore odio ea? Asperiores facere, tempore voluptate, distinctio, voluptatibus adipisci doloremque rem molestias provident nesciunt est corrupti.</p>
+          <h3>Sobre nós</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat, minima ipsum dolores maxime deserunt placeat inventore dolorum dignissimos deleniti officiis aliquam quis vero ipsam voluptates impedit ducimus qui quasi, veritatis fuga accusantium. Deleniti, quod exercitationem. Hic distinctio id iste incidunt, dicta iusto minus suscipit explicabo quidem voluptatibus. Enim blanditiis dolores voluptatem! Amet fugit officia voluptatibus neque, quasi laudantium nihil reprehenderit architecto voluptatem corrupti corporis veniam quam nostrum, exercitationem repellendus perferendis culpa eligendi a, consectetur voluptatum consequatur vel magni impedit.</p>
         </div>
         <div class="about-img">
-          
+
         </div>
       </section>
 
 
       <!--------------------------------  CONTAINER DE CARDS ----------------------->
 
-      <section class="container-cards">
-        <div class="cards">
-          <div class="card"><h1>card</h1></div>
-          <div class="card"><h1>card</h1></div>
-          <div class="card"><h1>card</h1></div>
-          <div class="card"><h1>card</h1></div>
-          <div class="card"><h1>card</h1></div>
-          <div class="card"><h1>card</h1></div>
+      <section class="container-cards" id="servicos">
+        <div class="shadow">
+          <div class="title-service">
+            <h1>Nossos Serviços</h1>
+          </div>
+
+          <div class="cards">
+
+            <div class="card" id="corte">
+
+              <div class="description-card">
+                <img src="/images/tesoura (1).png">
+                <h2>Corte</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+            <div class="card" id="barba">
+
+              <div class="description-card">
+                <img src="/images/navalha.png">
+                <h2>Barba</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+            <div class="card" id="sombrancelha">
+
+              <div class="description-card">
+                <img src="/images/pincas.png">
+                <h2>Sombrancelha</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+            <div class="card" id="noivo">
+
+              <div class="description-card">
+                <img src="/images/terno.png">
+                <h2>Dia do noivo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+            <div class="card" id="progressiva">
+
+              <div class="description-card">
+                <img src="/images/produtos-de-beleza.png">
+                <h2>Progressiva</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+            <div class="card" id="maquininha">
+
+              <div class="description-card">
+                <img src="/images/maquina-de-cortar-cabelo.png">
+                <h2>Equipamentos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem perferendis sit ipsum ab
+                  tenetur praesentium delectus, eius nisi cum at quas facilis, aspernatur, debitis laboriosam.
+                  Temporibus
+                  ipsa voluptatibus atque.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <button class="agendar">AGENDE SEU HORARIO <i class="fa-solid fa-arrow-right" style="color: #fcfcfc;"></i></button>
+          </div>
         </div>
       </section>
+
+
+      <section class="nosso-blog" id="blog">
+        <div class="info-blog">
+          <h2>Blog</h2>
+          <span>Confira as dicas que temos para você!</span>
+        </div>
+
+        <div class="nossas-dicas">
+          <div class="dicas">
+
+            <div class="dica1"></div>
+            <div class="info-dica1">
+              <h3><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit</strong></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus amet porro libero officia
+                provident non culpa, blanditiis ullam similique aliquid molestiae et architecto</p>
+              <a href="#">SAIBA MAIS</a>
+            </div>
+
+          </div>
+          <div class="dicas">
+
+            <div class="dica2"></div>
+            <div class="info-dica2">
+              <h3><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit</strong></h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus amet porro libero officia
+                  provident non culpa, blanditiis ullam similique aliquid molestiae et architecto</p>
+              </div>
+              <a href="#">SAIBA MAIS</a>
+            </div>
+
+          </div>
+          <div class="dicas">
+
+            <div class="dica3"></div>
+            <div class="info-dica3">
+              <h3><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit</strong></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus amet porro libero officia
+                provident non culpa, blanditiis ullam similique aliquid molestiae et architecto</p>
+              <a href="#">SAIBA MAIS</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <h2>CONFIRA NOSSOS ULTIMOS TRABALHOS</h2>
+        <div class="buttons">
+          <button id="all" onclick="buscandoFotos(this)">TODOS</button>
+          <button id="btn-beard" onclick="buscandoFotos(this)">BARBA</button>
+          <button id="cortes" onclick="buscandoFotos(this)">CORTE</button>
+          <button id="sobrancelha">SOBRANCELHA</button>
+          <button id="btn-progressiva" onclick="buscandoFotos(this)">PROGRESSIVA</button>
+        </div>
+
+        <div class="works-done">
+            <div class="examples" id="0">
+              <img src="/images/barba.jpg">
+            </div>
+            <div class="examples" id="1">
+              <img src="/images/homem-estiloso-sentado-em-uma-barbearia.jpg">
+            </div>
+            <div class="examples" id="2">
+              <img src="/images/corte.jpg">
+            </div>
+            <div class="examples" id="3">
+              <img src="/images/jovem-na-barbearia-aparando-cabelo.jpg">
+            </div>
+            <div class="examples" id="4">
+              <img src="/images/progressiva-imagem.jpg">
+            </div>
+            <div class="examples" id="5">
+              <img src="/images/maquininha.jpg">
+            </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="form">
+          <input type="text" placeholder="Nome">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Telefone">
+          <textarea placeholder="Digite uma mensagem"></textarea>
+        </div>
+        <div class="maps"></div>
+      </section>
+
+      <footer class="footer">
+        <p>Copyright 2023 - Todos os direitos reservados - Feito com amor por: João Vianna</p>
+      </footer>
 
     </main>
 
@@ -92,12 +264,13 @@
 
 
 
-    
+
   </div>
-  
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://kit.fontawesome.com/14e68733f7.js" crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
-  
+  <script src="/js/script.js" defer></script>
+
 </body>
+
 </html>
