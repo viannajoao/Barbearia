@@ -20,18 +20,21 @@ html {
   /* height: 500vh; */
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   border-radius: 25px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background: var(--first-color);
   border-radius: 30px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
   background: var(--secund-color);
 }
 
@@ -58,6 +61,7 @@ nav {
   padding-inline: 9vw;
   transition: .3s;
   z-index: 100;
+  
 }
 
 .nav-logo {
@@ -76,6 +80,7 @@ nav {
   display: flex;
   font-weight: 600;
   font-style: italic;
+  
 }
 
 .nav-menu,
@@ -101,6 +106,10 @@ nav {
 
 .nav-menu-btn {
   display: none;
+}
+
+.nav-menu-btn i{
+  font-size: 30px;
 }
 
 
@@ -157,12 +166,13 @@ nav {
   cursor: pointer;
 }
 
-.banner button, i{
+.banner button,
+i {
   font-size: 15px;
   margin-left: 8px;
 }
 
-.banner button:hover{
+.banner button:hover {
   background-color: #dd9103;
 }
 
@@ -219,7 +229,7 @@ nav {
   background-position: center;
 }
 
-.shadow{
+.shadow {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.514);
 
@@ -233,7 +243,7 @@ nav {
   padding: 50px;
 }
 
-.container-cards h1{
+.container-cards h1 {
   font-size: 40px;
   color: #FFF;
   margin-bottom: 50px;
@@ -247,7 +257,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   grid-gap: 25px;
-  
+
 }
 
 .card {
@@ -255,10 +265,10 @@ nav {
   width: 400px;
   height: 300px;
   border-radius: 10px;
-  
+
 }
 
-.description-card{
+.description-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,99 +277,99 @@ nav {
   padding: 0px 20px;
 }
 
-.description-card img{
+.description-card img {
   width: 40px;
   margin-bottom: 10px;
 }
 
-.description-card p{
+.description-card p {
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
 }
 
-#corte{
+#corte {
   background-image: url(/images/corte.jpg);
   background-size: cover;
   background-position: right;
 }
 
-#corte div{
+#corte div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-#barba{
+#barba {
   background-image: url(/images/barba.jpg);
   background-size: cover;
   background-position: right;
 }
 
-#barba div{
+#barba div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-#sombrancelha{
+#sombrancelha {
   background-image: url(/images/sombrancelha.jpg);
   background-size: cover;
   background-position: right;
 }
 
-#sombrancelha div{
+#sombrancelha div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-#noivo{
+#noivo {
   background-image: url(/images/dia\ do\ noivo.jpg);
   background-size: cover;
   background-position: right;
-  
+
 }
 
-#noivo div{
+#noivo div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-#progressiva{
+#progressiva {
   background-image: url(/images/progressiva-imagem.jpg);
   background-size: cover;
   background-position: right;
-  
+
 }
 
-#progressiva div{
+#progressiva div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-#maquininha{
+#maquininha {
   background-image: url(/images/maquininha.jpg);
   background-size: cover;
   background-position: right;
-  
+
 }
 
-#maquininha div{
+#maquininha div {
   width: 400px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
 }
 
-.agendar{
+.agendar {
   padding: 10px 30px;
   background-color: var(--first-color);
   color: #FFF;
@@ -373,42 +383,42 @@ nav {
   transition: .3s linear;
 }
 
-.agendar i{
+.agendar i {
   font-size: 15px;
   margin-left: 8px;
- 
+
 }
 
-.agendar:hover{
+.agendar:hover {
   background-color: #e09405;
   box-shadow: 5px 6px rgba(0, 0, 0, 0.384);
 
 }
 
 
-.nosso-blog{
+.nosso-blog {
   width: 100%;
   /* background-color: red; */
   padding: 90px;
-  
-} 
 
-.info-blog{
+}
+
+.info-blog {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.info-blog h2{
+.info-blog h2 {
   font-size: 60px;
   color: var(--first-color);
   font-family: 'Agbalumo', sans-serif;
 }
 
-.title-service{
+.title-service {
   visibility: hidden;
 }
 
-.nossas-dicas{
+.nossas-dicas {
   width: 80%;
   /* background-color: #f1f1f1; */
   display: flex;
@@ -416,7 +426,7 @@ nav {
   margin: auto;
 }
 
-.dicas{
+.dicas {
   width: 450px;
   height: 600px;
   display: flex;
@@ -428,11 +438,11 @@ nav {
   transition: all 0.5s ease;
 }
 
-.dicas h3{
+.dicas h3 {
   margin-bottom: 40px;
 }
 
-.dicas a{
+.dicas a {
   text-decoration: none;
   color: var(--first-color);
   font-weight: 700;
@@ -441,16 +451,16 @@ nav {
   margin-top: 70px;
 }
 
-.dica1{
+.dica1 {
   background-image: url(/images/homem-estiloso-sentado-em-uma-barbearia.jpg);
   background-size: cover;
   background-position: center;
-  
+
   width: 100%;
   height: 40%;
 }
 
-.info-dica1{
+.info-dica1 {
   width: 100%;
   height: 60%;
   background-color: #fff;
@@ -460,17 +470,17 @@ nav {
   border: 1px solid #eee;
 }
 
-.dica2{
+.dica2 {
   background-image: url(/images/cliente-e-barbeiro-cumprimentando-uns-aos-outros-na-barbearia.jpg);
   background-size: cover;
   /* background-position: center; */
-  
+
   width: 100%;
   height: 40%;
-  
+
 }
 
-.info-dica2{
+.info-dica2 {
   width: 100%;
   height: 60%;
   background-color: #fff;
@@ -480,16 +490,16 @@ nav {
   border: 1px solid #eee;
 }
 
-.dica3{
+.dica3 {
   background-image: url(/images/cliente-senior-estimando-o-trabalho-de-barbeiro-no-espelho.jpg);
   background-size: cover;
   background-position: center;
-  
+
   width: 100%;
   height: 40%;
 }
 
-.info-dica3{
+.info-dica3 {
   width: 100%;
   height: 60%;
   background-color: #fff;
@@ -500,19 +510,19 @@ nav {
 }
 
 
-.works{
+.works {
   width: 100%;
   text-align: center;
   margin-top: 100px;
 }
 
-.works h2{
+.works h2 {
   font-size: 40px;
   font-family: 'Agbalumo', sans-serif;
   color: var(--first-color);
 }
 
-.works button{
+.buttons button {
   padding: 10px 30px;
   background-color: var(--first-color);
   color: #FFF;
@@ -527,41 +537,46 @@ nav {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.13);
 }
 
-#all{
+/* #all{
+  background-color: #FFF;
+  color: var(--first-color);
+} */
+
+.buttons .checkbox {
   background-color: #FFF;
   color: var(--first-color);
 }
 
-.works-done{
-  width: 70%;
+.works-done {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
- justify-items: center;
- grid-gap: 20px;
+  justify-items: center;
+  grid-gap: 20px;
   /* background-color: red; */
   margin: auto;
   margin-top: 30px;
 }
 
-.examples img{
-  width: 500px;
-  height: 300px;
+.examples img {
+  width: 100%;
+  /* height: 300px; */
 }
 
 
-#contact{
+#contact {
   width: 100%;
   display: flex;
   margin-top: 150px;
   /* background-color: red; */
 }
 
-.form{
+.form {
   width: 50%;
   padding: 20px 60px;
 }
 
-.form input[type="text"]{
+.form input[type="text"] {
   width: 100%;
   border: none;
   background-color: #ccccccce;
@@ -572,7 +587,8 @@ nav {
   font-size: 16px;
 }
 
-.form input[type="email"], input[type="tel"]{
+.form input[type="email"],
+input[type="tel"] {
   width: 50%;
   border: none;
   background-color: #ccccccce;
@@ -583,7 +599,7 @@ nav {
   margin-bottom: 20px;
 }
 
-textarea{
+textarea {
   display: block;
   width: 100%;
   height: 200px;
@@ -596,14 +612,14 @@ textarea{
   font-size: 16px;
 }
 
-.maps{
+.maps {
   width: 50%;
 }
 
 
 
 
-.footer{
+.footer {
   width: 100%;
   background-color: var(--first-color);
   padding: 20px;
@@ -632,7 +648,7 @@ textarea{
   }
 }
 
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 1327px) {
   /* .nav-menu{
     display: none;
   } */
@@ -643,6 +659,10 @@ textarea{
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
+  }
+
+  nav{
+    justify-content: space-between;
   }
 
   .nav-menu {
@@ -662,7 +682,7 @@ textarea{
     transition: .3s;
   }
 
-  .nav-menu-list{
+  .nav-menu-list {
     flex-direction: column;
   }
 
@@ -672,6 +692,18 @@ textarea{
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact{
+    flex-direction: column;
+  }
+
+  .form{
+    width: 100%;
+  }
+
+  .maps{
+    width: 100%;
   }
 
 }
@@ -707,7 +739,19 @@ textarea{
 }
 
 @media screen and (max-width:824px) {
-  .cards{
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 875px){
+  .works-done{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 677px){
+  .works-done{
     grid-template-columns: repeat(1, 1fr);
   }
 }

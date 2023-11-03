@@ -82,13 +82,11 @@ function buscandoFotos(event){
   let div = document.querySelector('.works-done');
   let child = div.children
 
-  if(event.id === 'btn-beard'){
+  if(event.id === 'btn-beard' && event.className != 'checkbox'){
 
-    let btnbeard = document.getElementById('btn-beard')
-    btnbeard.style.backgroundColor = '#FFF'
-    btnbeard.style.color = 'var(--first-color)'
-    all.style.backgroundColor = 'var(--first-color)'
-    all.style.color = '#FFF'
+      all.style.backgroundColor = 'var(--first-color)';
+      all.style.color = '#FFF'
+      event.className = 'checkbox'
 
       for(let i=0; i < child.length;) {
         console.log(i);
@@ -99,7 +97,7 @@ function buscandoFotos(event){
 
       return console.log("success")
 
-  }else if(event.id === 'btn-progressiva'){
+  }else if(event.id === 'btn-progressiva' && event.className != 'checkbox'){
 
     let btnProgressiva = document.getElementById('btn-progressiva')
     btnProgressiva.style.backgroundColor = '#FFF'
