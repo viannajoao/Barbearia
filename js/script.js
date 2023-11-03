@@ -2,10 +2,11 @@
 
 function myMenuFunction() {
   let menuBtn = document.getElementById("myNavMenu");
+  let media = document.getElementById('media')
 
-  console.log(menuBtn)
   if (menuBtn.className === "nav-menu") {
     menuBtn.className += " responsive";
+    media.style.zIndex = 0;
   } else {
     menuBtn.className = "nav-menu";
   }
@@ -15,7 +16,7 @@ window.onscroll = function () { headerColor() }
 
 function headerColor() {
   const navHeader = document.getElementById('header')
-
+  
 
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
 
@@ -34,35 +35,16 @@ function headerColor() {
 
 
 
-const srleft = ScrollReveal({
+const srLeft = window.ScrollReveal({
   origin: 'left',
-  distance: '20px',
+  distance: '80px',
   duration: 2000,
-  reset: true,
-
+  delay: 100,
+  rotate: {x: 0, y: 100, z: 0},
 })
 
-const srTop = ScrollReveal({
-  origin: 'top',
-  distance: '20px',
-  duration: 2000,
-  reset: true
-})
+srLeft.reveal('.dicas', { reset: true });
 
-const srRight = ScrollReveal({
-  origin: 'right',
-  distance: '20px',
-  duration: 2000,
-  reset: true
-})
-
-window.sr = ScrollReveal({ reset: true })
-
-sr.reveal('.title-service', { duration: 2000 });
-
-srTop.reveal('.text-info', { delay: 250 })
-srleft.reveal('.cards', { delay: 250 })
-srRight.reveal('.sticky-beard', { delay: 250 }) //
 
 
 let beard = ['/images/jovem-na-barbearia-aparando-cabelo.jpg', 
@@ -74,19 +56,35 @@ let progressivas = ['/images/homem-estiloso-sentado-em-uma-barbearia.jpg', '/ima
 
 let cortes = ['/images/corte.jpg', '/images/corte1.jpg', '/images/corte2.jpg', '/images/corte3.jpg', '/images/corte4.jpg', '/images/corte5.jpg']
 
+let sobrancelha = ['/images/sombrancelha.jpg', '/images/', '/images/', '/images/', '/images/', '/images']
+
+let all = ['/images/barba2.jpg', '/images/corte2.jpg', '/images/sombrancelha.jpg', 
+'/images/dia do noivo.jpg', '/images/progressiva2.jpg', '/images/jovem-na-barbearia-aparando-cabelo.jpg']
 
 function buscandoFotos(event){
   
   console.log(event)
-  let all = document.getElementById('all')
+  let btnAll = document.getElementById('all')
+  let btnBeard = document.getElementById('btn-beard');
+  let btnCorte = document.getElementById('cortes');
+  let btnProgressiva = document.getElementById('btn-progressiva');
+  let btnSobrancelha = document.getElementById('sobrancelha');
+
+  console.log(all.className)
+
   let div = document.querySelector('.works-done');
   let child = div.children
 
-  if(event.id === 'btn-beard' && event.className != 'checkbox'){
+  if(event.id === 'btn-beard' && event.className == 'default'){
 
-      all.style.backgroundColor = 'var(--first-color)';
-      all.style.color = '#FFF'
+      btnAll.className = 'default'
+      btnCorte.className = 'default'
+      btnProgressiva.className = 'default'
+      btnSobrancelha.className = 'default'
       event.className = 'checkbox'
+
+      console.log(all)
+      console.log(event)
 
       for(let i=0; i < child.length;) {
         console.log(i);
@@ -95,13 +93,15 @@ function buscandoFotos(event){
         i++
       }
 
-      return console.log("success")
 
-  }else if(event.id === 'btn-progressiva' && event.className != 'checkbox'){
+  }else if(event.id === 'btn-progressiva' && event.className == 'default') {
 
-    let btnProgressiva = document.getElementById('btn-progressiva')
-    btnProgressiva.style.backgroundColor = '#FFF'
-    btnProgressiva.style.color = 'var(--first-color)'
+    btnAll.className = 'default'
+    btnCorte.className = 'default'
+    btnBeard.className = 'default'
+    btnSobrancelha.className = 'default'
+    event.className = 'checkbox'
+
     for(let i=0; i < child.length;) {
       console.log(i);
       let img = child[i];
@@ -109,15 +109,78 @@ function buscandoFotos(event){
       i++
     }
 
-    return console.log("success")
-  }else if(event.id === 'cortes'){
+  }else if(event.id === 'cortes' && event.className == 'default'){
+
+      btnAll.className = 'default'
+      btnBeard.className = 'default'
+      btnProgressiva.className = 'default'
+      btnSobrancelha.className = 'default'
+      event.className = 'checkbox'
+
     for(let i=0; i < child.length;) {
       console.log(i);
       let img = child[i];
       img.childNodes[1].src = cortes[i]
       i++
   }
-  } 
+  } else if(event.id === 'all' && event.className == 'default'){
+
+    btnCorte.className = 'default'
+    btnBeard.className = 'default'
+    btnProgressiva.className = 'default'
+    btnSobrancelha.className = 'default'
+    event.className = 'checkbox'
+
+  for(let i=0; i < child.length;) {
+    console.log(i);
+    let img = child[i];
+    img.childNodes[1].src = all[i]
+    i++
+}
  
+}else if(event.id === 'sobrancelha' && event.className == 'default'){
+
+  all.className = 'default'
+  btnBeard.className = 'default'
+  btnProgressiva.className = 'default'
+  btnCorte.className = 'default'
+  event.className = 'checkbox'
+
+for(let i=0; i < child.length;) {
+  console.log(i);
+  let img = child[i];
+  img.childNodes[1].src = sobrancelha[i]
+  i++
 }
 
+}
+
+}
+
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+  const scrollY = window.scrollY;
+  console.log(sections)
+
+  sections.forEach(current =>{
+    const sectionHeight = current.offsetHeight,
+        sectionTop = current.offsetTop - 400,
+      sectionId = current.getAttribute('id')
+
+      console.log(sectionId)
+
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
+
+        document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+
+    }  else {
+
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+
+    }
+  })
+}
+
+window.addEventListener('scroll', scrollActive)

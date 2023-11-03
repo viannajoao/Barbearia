@@ -20,9 +20,9 @@
         <a><img src="/images/CROSS-removebg-preview-copia.png"></a>
       </div>
       <div class="nav-menu" id="myNavMenu">
-        <ul class="nav-menu-list">
+        <ul class="nav-menu-list" >
           <li class="nav-list">
-            <a href="#" class="nav-link active-link">Home</a>
+            <a href="#home" class="nav-link active-link">Home</a>
           </li>
           <li class="nav-list">
             <a href="#sobre" class="nav-link">Quem somos</a>
@@ -49,14 +49,14 @@
 
     <main class="wrapper">
 
-      <section class="banner">
+      <section class="banner" id="home">
         <div class="text-info">
           <h1>Muito mais do que uma</h1>
           <span>Barbearia</span>
           <button>AGENDE SEU HORARIO <i class="fa-solid fa-arrow-right" style="color: #fcfcfc;"></i></button>
         </div>
 
-        <div class="social-media">
+        <div class="social-media" id="media">
           <div><i class="fa-brands fa-instagram"></i></div>
           <div><i class="fa-brands fa-linkedin-in"></i></div>
           <div><i class="fa-brands fa-facebook-f"></i></div>
@@ -240,11 +240,11 @@
       <section class="works">
         <h2>CONFIRA NOSSOS ULTIMOS TRABALHOS</h2>
         <div class="buttons">
-          <button class="all checkbox" id="all" onclick="buscandoFotos(this)">TODOS</button>
-          <button class="barba" id="btn-beard" onclick="buscandoFotos(this)">BARBA</button>
-          <button class="corte" id="cortes" onclick="buscandoFotos(this)">CORTE</button>
-          <button class="sobrancelha" id="sobrancelha" onclick="buscandoFotos(this)">SOBRANCELHA</button>
-          <button class="progressiva" id="btn-progressiva" onclick="buscandoFotos(this)">PROGRESSIVA</button>
+          <button class="checkbox" id="all" onclick="buscandoFotos(this)">TODOS</button>
+          <button class="default" id="btn-beard" onclick="buscandoFotos(this)">BARBA</button>
+          <button class="default" id="cortes" onclick="buscandoFotos(this)">CORTE</button>
+          <button class="default" id="sobrancelha" onclick="buscandoFotos(this)">SOBRANCELHA</button>
+          <button class="default" id="btn-progressiva" onclick="buscandoFotos(this)">PROGRESSIVA</button>
         </div>
 
         <div class="works-done">
@@ -269,7 +269,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section  class="our-contact" id="contact">
         <div class="form">
           <h2>FALE CONOSCO</h2>
           <input type="text" placeholder="Nome">
@@ -302,9 +302,9 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <section class="footer">
         <p>Copyright 2023 - Todos os direitos reservados - Feito com amor por: João Vianna</p>
-      </footer>
+      </section>
 
     </main>
 

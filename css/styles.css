@@ -20,6 +20,7 @@ html {
   /* height: 500vh; */
 }
 
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 25px;
@@ -110,6 +111,24 @@ nav {
 
 .nav-menu-btn i {
   font-size: 30px;
+}
+
+.active-link{
+  position: relative;
+  color: var(--secund-color);
+  transition: .3;
+}
+
+.active-link::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
 }
 
 
@@ -266,7 +285,11 @@ i {
   background-image: url(/images/fundo-feito-de-tijolos.jpg);
   background-size: contain;
   background-position: center;
+
+  margin-bottom: 100px;
 }
+
+
 
 .shadow {
   width: 100%;
@@ -276,8 +299,6 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  /* height: 80vh; */
   margin: auto;
   padding: 50px;
 }
@@ -301,7 +322,7 @@ i {
 
 .card {
   /* background-color: rgba(0, 0, 0, 0.418); */
-  width: 400px;
+  width: 500px;
   height: 300px;
   border-radius: 10px;
 
@@ -334,7 +355,7 @@ i {
 }
 
 #corte div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -347,7 +368,7 @@ i {
 }
 
 #barba div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -360,7 +381,7 @@ i {
 }
 
 #sombrancelha div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -374,7 +395,7 @@ i {
 }
 
 #noivo div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -388,7 +409,7 @@ i {
 }
 
 #progressiva div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -402,7 +423,7 @@ i {
 }
 
 #maquininha div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.644);
   border-radius: 10px;
@@ -439,7 +460,7 @@ i {
   width: 100%;
   /* background-color: red; */
   /* padding: 90px; */
-
+  padding-block: 5em;
 }
 
 .info-blog {
@@ -453,9 +474,7 @@ i {
   font-family: 'Agbalumo', sans-serif;
 }
 
-.title-service {
-  visibility: hidden;
-}
+
 
 .nossas-dicas {
   /* width: 80%; */
@@ -582,7 +601,9 @@ i {
   color: var(--first-color);
 }
 
-.buttons button {
+
+
+.default{
   padding: 10px 30px;
   background-color: var(--first-color);
   color: #FFF;
@@ -602,9 +623,19 @@ i {
   color: var(--first-color);
 } */
 
-.buttons .checkbox {
+.checkbox {
+  padding: 10px 30px;
   background-color: #FFF;
   color: var(--first-color);
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 10px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.13);
 }
 
 .works-done {
@@ -668,11 +699,6 @@ input[type="tel"] {
   margin-bottom: 20px;
   font-style: italic;
   outline: #888484;
-}
-
-.form input[type="email"],
-input[type="tel"]:focus{
- 
 }
 
 .input{
