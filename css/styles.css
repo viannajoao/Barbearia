@@ -141,7 +141,7 @@ nav {
   height: 70vh;
   background-image: url(/images/jovem-na-barbearia-aparando-cabelo.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
 
   display: flex;
   align-items: center;
@@ -150,7 +150,8 @@ nav {
 
 .text-info {
   /* background-color: red; */
-  margin-left: 120px;
+  margin-left: 8rem;
+  margin-top: 3rem;
   text-align: center;
   padding: 20px 30px;
 
@@ -161,28 +162,30 @@ nav {
 
 .text-info h1 {
   color: #FFF;
-  font-size: 28px;
-  line-height: 5px;
-  margin-left: 30px;
+  font-size: 32px;
+  margin-left: 1.9rem;
+  /* background-color: green; */
   /* margin-left: 5rem; */
 }
 
-.text-info span {
+.text-info h2 {
   color: var(--first-color);
-  font-size: 72px;
+  font-size: 105px;
   font-family: 'Agbalumo', sans-serif;
+  /* background-color: blue; */
+  line-height: 25px;
 }
 
 .banner button {
-  padding: 10px 30px;
+  padding: 10px 20px;
   background-color: var(--first-color);
   color: #FFF;
   border: none;
   border-radius: 5px;
-  display: inline-block;
   font-weight: 600;
   font-style: italic;
   cursor: pointer;
+  margin-top: 3.4rem;
 }
 
 .banner button,
@@ -963,6 +966,7 @@ textarea {
   .maps iframe{
     height: 300px;
   }
+
 }
 
 @media screen and (max-width: 1075px) {
@@ -985,6 +989,7 @@ textarea {
   .form{
     padding: 10px 10px;
   }
+
 }
 
 
@@ -1158,4 +1163,96 @@ textarea {
     font-size: 25px;
   }
 
+}
+
+@media screen and (max-width: 1839px) {
+
+  .text-info h1{
+    font-size: 28px;
+  }
+
+  .text-info span{
+    font-size: 90px;
+  }
+
+}
+
+@media screen and (max-width: 1449px){
+  .text-info{
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+
+  .text-info button{
+    margin-top: 3rem;
+  }
+
+  .text-info h2{
+    font-size: 90px;
+  }
+
+  .text-info h1{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1239px){
+  .text-info{
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1075px){
+  .text-info h1{
+    font-size: 22px;
+    margin-left: 0.3rem;
+  }
+
+  .text-info h2{
+    font-size: 80px;
+  }
+
+  .text-info button{
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 883px){
+
+  .text-info{
+    margin-left: 1rem;
+    margin-top: 8rem;
+  }
+
+  .text-info h1{
+    font-size: 18px;
+    margin-left: -1.5rem;
+  }
+
+  .text-info h2{
+    font-size: 75px;
+  }
+
+  .text-info button{
+    margin-top: 2.2rem;
+  }
+}
+
+@media screen and (max-width:503px){
+
+  .text-info h1{
+    line-height: 20px;
+  }
+
+  .text-info h2{
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width:399px){
+  .text-info{
+    margin-left: 0rem;
+    margin-top: 12rem;
+  }
 }

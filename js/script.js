@@ -9,6 +9,7 @@ function myMenuFunction() {
     media.style.zIndex = 0;
   } else {
     menuBtn.className = "nav-menu";
+    media.style.zIndex = 100;
   }
 }
 
@@ -35,15 +36,21 @@ function headerColor() {
 
 
 
-const srLeft = window.ScrollReveal({
+let srLeft = window.ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
-  delay: 100,
   rotate: {x: 0, y: 100, z: 0},
 })
 
-srLeft.reveal('.dicas', { reset: true });
+let srTop = ScrollReveal({
+  origin: 'bottom', 
+  distance: '100px', 
+  duration: 2000,
+})
+
+srLeft.reveal('.dicas', {delay: 100});
+// srTop.reveal('.text-info', {delay: 100})
 
 
 
