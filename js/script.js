@@ -1,5 +1,6 @@
-
-
+function carregamento(){
+window.localStorage.setItem(beard, progressivas, cortes, all, sobrancelha, 'images')
+}
 function myMenuFunction() {
   let menuBtn = document.getElementById("myNavMenu");
   let media = document.getElementById('media')
@@ -186,3 +187,4 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+window.addEventListener('load', carregamento)
