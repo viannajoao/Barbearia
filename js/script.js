@@ -43,14 +43,9 @@ let srLeft = window.ScrollReveal({
   rotate: {x: 0, y: 100, z: 0},
 })
 
-let srTop = ScrollReveal({
-  origin: 'bottom', 
-  distance: '100px', 
-  duration: 2000,
-})
+
 
 srLeft.reveal('.dicas', {delay: 100});
-// srTop.reveal('.text-info', {delay: 100})
 
 
 
