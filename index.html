@@ -247,7 +247,11 @@
           <button class="default" id="btn-progressiva" onclick="buscandoFotos(this)">PROGRESSIVA</button>
         </div>
 
-        <div class="works-done">
+        <div class="container-works">
+          <div class="carregamento">
+            <div class="efeito-carregamento"></div>
+          </div>
+          <div class="works-done">
           <div class="examples" id="0">
             <img src="/images1/barba.webp" alt="barba">
           </div>
@@ -266,6 +270,7 @@
           <div class="examples" id="5">
             <img src="/images/barba1.webp" alt="homem fazendo a barba">
           </div>
+        </div>
         </div>
       </section>
 
@@ -309,12 +314,25 @@
     </main>
 
 
-
+    
 
 
 
 
   </div>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://kit.fontawesome.com/14e68733f7.js" crossorigin="anonymous"></script>

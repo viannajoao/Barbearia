@@ -1,6 +1,4 @@
-function carregamento(){
-window.localStorage.setItem(beard, progressivas, cortes, all, sobrancelha, 'images')
-}
+
 function myMenuFunction() {
   let menuBtn = document.getElementById("myNavMenu");
   let media = document.getElementById('media')
@@ -37,7 +35,7 @@ function headerColor() {
 
 
 
-let srLeft = window.ScrollReveal({
+let srLeft = ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
@@ -47,6 +45,7 @@ let srLeft = window.ScrollReveal({
 
 
 srLeft.reveal('.dicas', {delay: 100});
+
 
 
 
@@ -60,7 +59,8 @@ let progressivas = ['/images1/homem-estiloso-sentado-em-uma-barbearia.webp', '/i
 
 let cortes = ['/images1/corte.webp', '/images1/corte1.webp', '/images1/corte2.webp', '/images1/corte3.webp', '/images1/corte4.webp', '/images1/corte5.webp']
 
-let sobrancelha = ['/images1/sombrancelha.webp', '/images/', '/images/', '/images/', '/images/', '/images']
+let sobrancelha = ['/images1/sombrancelha.webp', '/images1/sobrancelha1.webp', '/images1/sobrancelha2.webp', '/images1/sobrancelha3.webp',
+ '/images1/sobrancelha4.webp', '/images1/sobrancelha5.webp']
 
 let all = ['/images1/barba2.webp', '/images1/corte2.webp', '/images1/sombrancelha.webp', 
 '/images1/dia do noivo.webp', '/images1/progressiva2.webp', '/images1/jovem-na-barbearia-aparando-cabelo.webp']
@@ -73,13 +73,15 @@ function buscandoFotos(event){
   let btnCorte = document.getElementById('cortes');
   let btnProgressiva = document.getElementById('btn-progressiva');
   let btnSobrancelha = document.getElementById('sobrancelha');
-
-  console.log(all.className)
+ 
 
   let div = document.querySelector('.works-done');
+  let carregamento = document.querySelector('.carregamento'); 
   let child = div.children
 
   if(event.id === 'btn-beard' && event.className == 'default'){
+
+
 
       btnAll.className = 'default'
       btnCorte.className = 'default'
@@ -87,8 +89,12 @@ function buscandoFotos(event){
       btnSobrancelha.className = 'default'
       event.className = 'checkbox'
 
-      console.log(all)
-      console.log(event)
+
+      console.log(div)
+      console.log(carregamento)
+
+      carregamento.style.display = 'flex'
+      div.style.display = 'none'
 
       for(let i=0; i < child.length;) {
         console.log(i);
@@ -96,6 +102,12 @@ function buscandoFotos(event){
         img.childNodes[1].src = beard[i]
         i++
       }
+
+    setTimeout(()=>{
+      carregamento.style.display = 'none'
+      div.style.display = 'grid'
+
+    }, 2500)
 
 
   }else if(event.id === 'btn-progressiva' && event.className == 'default') {
@@ -106,12 +118,22 @@ function buscandoFotos(event){
     btnSobrancelha.className = 'default'
     event.className = 'checkbox'
 
+    carregamento.style.display = 'flex'
+    div.style.display = 'none'
+
     for(let i=0; i < child.length;) {
       console.log(i);
       let img = child[i];
       img.childNodes[1].src = progressivas[i]
       i++
     }
+
+  setTimeout(()=>{
+
+    carregamento.style.display = 'none'
+    div.style.display = 'grid'
+
+  }, 3000)
 
   }else if(event.id === 'cortes' && event.className == 'default'){
 
@@ -121,12 +143,22 @@ function buscandoFotos(event){
       btnSobrancelha.className = 'default'
       event.className = 'checkbox'
 
-    for(let i=0; i < child.length;) {
-      console.log(i);
-      let img = child[i];
-      img.childNodes[1].src = cortes[i]
-      i++
-  }
+      carregamento.style.display = 'flex'
+      div.style.display = 'none'
+
+      for(let i=0; i < child.length;) {
+        console.log(i);
+        let img = child[i];
+        img.childNodes[1].src = cortes[i]
+        i++
+      }
+
+    setTimeout(()=>{
+
+      carregamento.style.display = 'none'
+      div.style.display = 'grid'
+
+    }, 2500)
   } else if(event.id === 'all' && event.className == 'default'){
 
     btnCorte.className = 'default'
@@ -135,12 +167,22 @@ function buscandoFotos(event){
     btnSobrancelha.className = 'default'
     event.className = 'checkbox'
 
-  for(let i=0; i < child.length;) {
-    console.log(i);
-    let img = child[i];
-    img.childNodes[1].src = all[i]
-    i++
-}
+    carregamento.style.display = 'flex'
+    div.style.display = 'none'
+
+    for(let i=0; i < child.length;) {
+      console.log(i);
+      let img = child[i];
+      img.childNodes[1].src = all[i]
+      i++
+    }
+
+  setTimeout(()=>{
+
+    carregamento.style.display = 'none'
+    div.style.display = 'grid'
+
+  }, 2500)
  
 }else if(event.id === 'sobrancelha' && event.className == 'default'){
 
@@ -150,30 +192,40 @@ function buscandoFotos(event){
   btnCorte.className = 'default'
   event.className = 'checkbox'
 
-for(let i=0; i < child.length;) {
-  console.log(i);
-  let img = child[i];
-  img.childNodes[1].src = sobrancelha[i]
-  i++
-}
+  carregamento.style.display = 'flex'
+      div.style.display = 'none'
+
+      for(let i=0; i < child.length;) {
+        console.log(i);
+        let img = child[i];
+        img.childNodes[1].src = sobrancelha[i]
+        i++
+      }
+
+    setTimeout(()=>{
+      carregamento.style.display = 'none'
+      div.style.display = 'grid'
+
+    }, 2500)
 
 }
 
 }
+
 
 
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
   const scrollY = window.scrollY;
-  console.log(sections)
+  // console.log(sections)
 
   sections.forEach(current =>{
     const sectionHeight = current.offsetHeight,
         sectionTop = current.offsetTop - 400,
       sectionId = current.getAttribute('id')
 
-      console.log(sectionId)
+      // console.log(sectionId)
 
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
 
@@ -188,4 +240,3 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
-window.addEventListener('load', carregamento)

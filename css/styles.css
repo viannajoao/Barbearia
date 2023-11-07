@@ -655,6 +655,36 @@ i {
   /* background-color: red; */
   margin: auto;
   margin-top: 30px;
+
+  transition: 2s;
+}
+
+.carregamento{
+  width: 100%;
+  height: 600px;
+  /* background-color: dodgerblue; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  transition: 5s;
+}
+
+.efeito-carregamento{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: var(--first-color);
+
+  animation: efeito 0.5s infinite;
+}
+
+@keyframes efeito{
+  0%{
+    box-shadow: 0 0 0 0 #F29F05;
+  }100%{
+    box-shadow: 0 0 0 15px #d9670465;
+  }
 }
 
 .examples img {
@@ -669,7 +699,7 @@ i {
   margin-top: 150px;
   height: 80vh;
   padding: 10px 20px;
-  background-color: #f1f1f1;
+  background-color: #f7f7f7;
 }
 
 .form {
