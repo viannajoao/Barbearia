@@ -140,7 +140,7 @@ nav {
 .banner {
   width: 100%;
   height: 70vh;
-  background-image: url(/images/jovem-na-barbearia-aparando-cabelo.jpg);
+  background-image: url(/images1/jovem-na-barbearia-aparando-cabelo.webp);
   background-size: cover;
   background-position: center;
 
@@ -353,7 +353,7 @@ i {
 }
 
 #corte {
-  background-image: url(/images/corte.jpg);
+  background-image: url(/images1/corte.webp);
   background-size: cover;
   background-position: right;
 }
@@ -366,7 +366,7 @@ i {
 }
 
 #barba {
-  background-image: url(/images/barba.jpg);
+  background-image: url(/images1/barba.webp);
   background-size: cover;
   background-position: right;
 }
@@ -379,7 +379,7 @@ i {
 }
 
 #sombrancelha {
-  background-image: url(/images/sombrancelha.jpg);
+  background-image: url(/images1/sombrancelha.webp);
   background-size: cover;
   background-position: right;
 }
@@ -392,7 +392,7 @@ i {
 }
 
 #noivo {
-  background-image: url(/images/dia\ do\ noivo.jpg);
+  background-image: url(/images1/dia\ do\ noivo.webp);
   background-size: cover;
   background-position: right;
 
@@ -406,7 +406,7 @@ i {
 }
 
 #progressiva {
-  background-image: url(/images/progressiva-imagem.jpg);
+  background-image: url(/images1/progressiva-imagem.webp);
   background-size: cover;
   background-position: right;
 
@@ -420,7 +420,7 @@ i {
 }
 
 #maquininha {
-  background-image: url(/images/maquininha.jpg);
+  background-image: url(/images1/maquininha.webp);
   background-size: cover;
   background-position: right;
 
@@ -527,7 +527,7 @@ i {
 }
 
 .dica1 {
-  background-image: url(/images/homem-estiloso-sentado-em-uma-barbearia.jpg);
+  background-image: url(/images1/homem-estiloso-sentado-em-uma-barbearia.webp);
   background-size: cover;
   background-position: center;
 
@@ -546,7 +546,7 @@ i {
 }
 
 .dica2 {
-  background-image: url(/images/cliente-e-barbeiro-cumprimentando-uns-aos-outros-na-barbearia.jpg);
+  background-image: url(/images1/cliente-e-barbeiro-cumprimentando-uns-aos-outros-na-barbearia.webp);
   background-size: cover;
   /* background-position: center; */
 
@@ -578,7 +578,7 @@ i {
 }
 
 .dica3 {
-  background-image: url(/images/cliente-senior-estimando-o-trabalho-de-barbeiro-no-espelho.jpg);
+  background-image: url(/images1/cliente-senior-estimando-o-trabalho-de-barbeiro-no-espelho.webp);
   background-size: cover;
   background-position: center;
 
@@ -659,7 +659,7 @@ i {
 
 .examples img {
   width: 100%;
-  /* height: 300px; */
+  /* height: 350px; */
 }
 
 
@@ -667,8 +667,9 @@ i {
   width: 100%;
   display: flex;
   margin-top: 150px;
+  height: 80vh;
   padding: 10px 20px;
-  /* background-color: red; */
+  background-color: #f1f1f1;
 }
 
 .form {
@@ -760,7 +761,7 @@ textarea {
 
 .maps iframe {
   width: 100%;
-  height: 70%;
+  height: 50%;
 }
 
 .contact-grid {
@@ -788,7 +789,7 @@ textarea {
   width: 100%;
   background-color: var(--first-color);
   padding: 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   text-align: center;
   color: #FFF;
 }
@@ -972,6 +973,13 @@ textarea {
     height: 300px;
   }
 
+  #contact{
+    height: auto;
+  }
+  
+  .contact-grid{
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 1075px) {

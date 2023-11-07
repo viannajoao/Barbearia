@@ -50,19 +50,20 @@ srLeft.reveal('.dicas', {delay: 100});
 
 
 
-let beard = ['/images/jovem-na-barbearia-aparando-cabelo.jpg', 
-'/images/cliente-senior-estimando-o-trabalho-de-barbeiro-no-espelho.jpg', 
-'/images/barba1.jpg', '/images/barba2.jpg', '/images/barba3.jpg', '/images/barba4.jpg'
+let beard = ['/images1/jovem-na-barbearia-aparando-cabelo.webp', 
+'/images1/cliente-senior-estimando-o-trabalho-de-barbeiro-no-espelho.webp', 
+'/images1/barba1.webp', '/images1/barba2.webp', '/images1/barba3.webp', '/images1/barba4.webp'
 ]
 
-let progressivas = ['/images/homem-estiloso-sentado-em-uma-barbearia.jpg', '/images/progressiva1.jpg', '/images/progressiva2.jpg', ]
+let progressivas = ['/images1/homem-estiloso-sentado-em-uma-barbearia.webp', '/images1/progressiva1.webp', '/images1/progressiva2.webp', '/images1/progressiva3.webp',
+'/images1/progressiva4.webp', '/images1/progressiva5.webp']
 
-let cortes = ['/images/corte.jpg', '/images/corte1.jpg', '/images/corte2.jpg', '/images/corte3.jpg', '/images/corte4.jpg', '/images/corte5.jpg']
+let cortes = ['/images1/corte.webp', '/images1/corte1.webp', '/images1/corte2.webp', '/images1/corte3.webp', '/images1/corte4.webp', '/images1/corte5.webp']
 
-let sobrancelha = ['/images/sombrancelha.jpg', '/images/', '/images/', '/images/', '/images/', '/images']
+let sobrancelha = ['/images1/sombrancelha.webp', '/images/', '/images/', '/images/', '/images/', '/images']
 
-let all = ['/images/barba2.jpg', '/images/corte2.jpg', '/images/sombrancelha.jpg', 
-'/images/dia do noivo.jpg', '/images/progressiva2.jpg', '/images/jovem-na-barbearia-aparando-cabelo.jpg']
+let all = ['/images1/barba2.webp', '/images1/corte2.webp', '/images1/sombrancelha.webp', 
+'/images1/dia do noivo.webp', '/images1/progressiva2.webp', '/images1/jovem-na-barbearia-aparando-cabelo.webp']
 
 function buscandoFotos(event){
   
