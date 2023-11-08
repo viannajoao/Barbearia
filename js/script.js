@@ -107,7 +107,7 @@ function buscandoFotos(event){
       carregamento.style.display = 'none'
       div.style.display = 'grid'
 
-    }, 2500)
+    }, 1500)
 
 
   }else if(event.id === 'btn-progressiva' && event.className == 'default') {
@@ -133,7 +133,7 @@ function buscandoFotos(event){
     carregamento.style.display = 'none'
     div.style.display = 'grid'
 
-  }, 3000)
+  }, 1500)
 
   }else if(event.id === 'cortes' && event.className == 'default'){
 
@@ -158,7 +158,7 @@ function buscandoFotos(event){
       carregamento.style.display = 'none'
       div.style.display = 'grid'
 
-    }, 2500)
+    }, 1500)
   } else if(event.id === 'all' && event.className == 'default'){
 
     btnCorte.className = 'default'
@@ -182,7 +182,7 @@ function buscandoFotos(event){
     carregamento.style.display = 'none'
     div.style.display = 'grid'
 
-  }, 2500)
+  }, 1500)
  
 }else if(event.id === 'sobrancelha' && event.className == 'default'){
 
@@ -206,7 +206,7 @@ function buscandoFotos(event){
       carregamento.style.display = 'none'
       div.style.display = 'grid'
 
-    }, 2500)
+    }, 1500)
 
 }
 
