@@ -34,6 +34,32 @@ function headerColor() {
 }
 
 
+function modDark(){
+
+  console.log('clicou');
+
+  let dark = document.getElementById('dark');
+  let body  = document.body
+  let contact = document.getElementById('contact');
+
+  if(dark.className === 'light'){
+
+    dark.className = 'dark'
+    body.style.backgroundColor = '#1F2226';
+    body.style.color = 'white';
+    contact.style.backgroundColor = '#1F2226';
+
+  }else if(dark.className === 'dark'){
+
+    dark.className = 'light'
+    body.style.backgroundColor = '#FFF';
+    body.style.color  = 'black'
+    contact.style.backgroundColor = '#f7f7f7'
+  }
+
+}
+
+
 
 let srLeft = ScrollReveal({
   origin: 'left',

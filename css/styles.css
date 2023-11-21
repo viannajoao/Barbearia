@@ -114,6 +114,52 @@ nav {
   font-size: 30px;
 }
 
+#dark{
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+#toggle{
+  display: none;
+  
+}
+
+.button{
+  display: inline-block;
+  width: 90px;
+  height: 35px;
+  background-color: #FFF;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.button::after{
+  content: url('/images/brilho-do-sol\ \(3\).png');
+  width: 40px;
+  height: 40px;
+  background-color: #e03c3c;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0, .25);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+  transition: background-color .5s,
+  transform .5s ease-in;
+
+}
+
+
+#toggle:checked + .button::after{
+  content: url('/images/lua-crescente\ \(1\).png');
+  background-color: #1f257f;
+  transform: translateX(50px) rotate(360deg)
+}
+
 .active-link{
   position: relative;
   color: var(--secund-color);
@@ -507,11 +553,12 @@ i {
 .dicas h3 {
   margin-bottom: 40px;
   font-size: 1.3rem;
+  color: black !important;
 }
 
 .paragrafo {
   font-size: 1rem;
-
+  color: black !important;
 }
 
 .dicas a {
@@ -799,6 +846,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  
 }
 
 .contact-grid i {
@@ -844,10 +892,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1327px) {
-  /* .nav-menu{
-    display: none;
-  } */
+@media screen and (max-width: 1539px) {
 
   .nav-menu-btn {
     display: flex;
@@ -885,6 +930,19 @@ textarea {
   .nav-menu.responsive {
     left: 0;
   }
+
+  #dark {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 1327px) {
+  /* .nav-menu{
+    display: none;
+  } */
+
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
